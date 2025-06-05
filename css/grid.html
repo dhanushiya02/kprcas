@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<body>
+      <style>
+        .parent{
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 50px 50px 50px;
+            gap: 5px;
+        }
+        .child{
+            background-color: aqua;
+        }
+        .child-4{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        
+      </style> 
+      <div class="parent">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">2</div>
+    <div class="child child-4">4</div>
+    <div class="child">5</div>
+    <div class="child">6</div>
+    <div class="child">7</div>
+    <div class="child">8</div>
+    <div class="child">9</div>
+    <div class="child">10</div>
+
+      </div>
+</body>
+
+
+</html>
